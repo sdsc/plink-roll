@@ -1,0 +1,3 @@
+NAME    = plink
+VERSION = 1.06
+RELEASE = 1
