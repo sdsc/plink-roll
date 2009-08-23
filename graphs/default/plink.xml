@@ -14,13 +14,16 @@
 
   <changelog>
   $Log$
+  Revision 1.2  2009/08/23 05:12:04  jhayes
+  Move plink install from devel to compute.
+
   Revision 1.1  2009/06/19 17:00:01  jhayes
   Added plink package.
 
   </changelog>
 
-  <edge from="devel">
-    <to>plink-devel</to>
+  <edge from="compute">
+    <to>plink-compute</to>
   </edge>
 
 </graph>
