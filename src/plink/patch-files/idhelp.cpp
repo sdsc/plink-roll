@@ -771,7 +771,7 @@ void IDHelper::idHelp()
       PP->printLOG("   Joint fields:");
       for (int j2 = 0 ; j2 < jointField.size(); j2++ )
 	{
-	  set<IDField*> & jf = jointField[j];
+	  set<IDField*> & jf = jointField[j2];
 	  set<IDField*>::iterator j2 = jf.begin();
 	  PP->printLOG(" { ");
 	  while ( j2 != jf.end() )
