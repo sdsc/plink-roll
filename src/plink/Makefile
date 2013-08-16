@@ -66,6 +66,7 @@ build:
           cp patch-files/Makefile $(SOURCE); \
           cp patch-files/sets.cpp $(SOURCE); \
           cp patch-files/elf.cpp $(SOURCE); \
+          cp patch-files/idhelp.cpp $(SOURCE); \
           . /etc/profile.d/modules.sh; \
           module load intel; \
           export MKLLIB=`find $${MKL_ROOT}/lib/* -maxdepth 0 | head -1`; \
