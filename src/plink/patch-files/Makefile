@@ -27,7 +27,7 @@ WITH_WEBCHECK = 1
 FORCE_32BIT = 
 WITH_ZLIB = 1
 WITH_LAPACK = 1 
-FORCE_DYNAMIC = 
+FORCE_DYNAMIC =  1
 
 # Put C++ compiler here; Windows has it's own specific version
 CXX_UNIX = g++
@@ -37,7 +37,7 @@ CXX_WIN = c:\bin\mingw\bin\mingw32-g++.exe
 CXXFLAGS = 
 
 # Misc
-LIB_LAPACK =   -Wl,--start-group ROOTMKL/libmkl_intel_lp64.a ROOTMKL/libmkl_sequential.a  ROOTMKL/libmkl_core.a  -Wl,--end-group -lpthread -lm
+LIB_LAPACK =   -Wl,--start-group ROOTMKL/libmkl_intel_lp64.a ROOTMKL/libmkl_sequential.a  ROOTMKL/libmkl_core.a  -Wl,--end-group -lpthread -ldl -lm
 
 
 # --------------------------------------------------------------------
@@ -136,7 +136,7 @@ ifdef WITH_ZLIB
 CXXFLAGS += -DWITH_ZLIB
 HDR += zfstream.h
 SRC += zfstream.cpp
-LIB += -L/usr/lib64 -lz
+LIB += -lz
 endif
 
 ifdef WITH_LAPACK
