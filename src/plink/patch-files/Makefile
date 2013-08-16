@@ -136,7 +136,7 @@ ifdef WITH_ZLIB
 CXXFLAGS += -DWITH_ZLIB
 HDR += zfstream.h
 SRC += zfstream.cpp
-LIB += -lz
+LIB += -L/usr/lib64 -lz
 endif
 
 ifdef WITH_LAPACK
