@@ -776,7 +776,7 @@ void IDHelper::idHelp()
 	  PP->printLOG(" { ");
 	  while ( j3 != jf.end() )
 	    {
-	      PP->printLOG( (*j2)->name + " " );
+	      PP->printLOG( (*j3)->name + " " );
 	      ++j3;
 	    }
 	  PP->printLOG(" }");
