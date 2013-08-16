@@ -771,7 +771,7 @@ vector_t Set::profileTestScore()
       vector<Individual*>::iterator i2 = PP->sample.begin();
       while ( i2 != PP->sample.end() )
 	{
-	  (*i2)->missing = (*i)->flag;
+	  (*i2)->missing = (*i2)->flag;
 	  ++i2;
 	}
 
